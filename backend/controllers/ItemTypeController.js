@@ -53,10 +53,6 @@ const createItemType = async (req, res) => {
 const deleteItemType = async (req, res) => {
   const { id } = req.params;
 
-  // if (!mongoose.Types.ObjectId.isValid(id)) {
-  //   return res.id.status(404).json({ error: 'No such item' });
-  // }
-
   const item = await ItemType.findOneAndDelete({ _id: id });
   if (!item) {
     return res.id.status(404).json({ error: 'No such item type' });
