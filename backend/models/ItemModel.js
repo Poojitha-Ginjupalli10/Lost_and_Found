@@ -42,6 +42,6 @@ const itemSchema = new Schema(
     },
   },
   { timestamps: true }
-);
+); 
 
 module.exports = mongoose.model('Items', itemSchema);

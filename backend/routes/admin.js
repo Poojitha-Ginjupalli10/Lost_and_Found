@@ -18,4 +18,6 @@ router.post('/signup', signupAdmin);
 // change password
 router.patch('/', changepassword);
 
+
+
 module.exports = router;
